@@ -8,6 +8,21 @@ mod_evasive_uri
 This fork of mod_evasive add an optionnal configuration permitting to block the ip of flooder just for one URI and not for all the site.
 The original mod_evasive developped by Jonathan Zdziarski's don't permit of limited his action on only one URI.
 
+INSTALLATION :
+
+APACHE v2.0
+-----------
+
+1. Extract this archive
+
+2. Run $APACHE_ROOT/bin/apxs -i -a -c mod_evasive20.c
+
+3. The module will be built and installed into $APACHE_ROOT/modules, and loaded into your httpd.conf
+
+4. Restart Apache
+
+CONFIGURATION
+
 - Just add one paramater in more in you httpd.conf or vitual host file :
 
 DOSGeturi "/index.html"
